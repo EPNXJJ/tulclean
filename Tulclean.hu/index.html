@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Túl-Clean</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+
+        /* Luckiest Guy font */
+        @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@100&display=swap');
+
+        .font {
+            font-family: "Luckiest Guy", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background styling */
+        body {
+            background-color: #d9d9d9; /* Match the gray tone in your design */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        /* Center content container */
+        .container {
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* Logo styling */
+        .logo img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 20%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+        /* "HAMAROSAN" text */
+        .text h1 {
+            font-size: 2rem;
+            color: #ffffff; /* Match the red text in your design */
+            text-shadow: 
+                -2px -2px 0 #ff0000,  /* Top-left white shadow */
+                2px -2px 0 #ff0000,   /* Top-right white shadow */
+                -2px 2px 0 #ff0000,   /* Bottom-left white shadow */
+                2px 2px 0 #ff0000;    /* Bottom-right white shadow */
+            margin-top: 20px;
+        }
+
+        #cleaning {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the video covers the entire screen */
+            z-index: -1; /* Places the video behind content */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .logo img {
+                max-width: 70%;
+            }
+
+            .text h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo img {
+                max-width: 90%;
+            }
+
+            .text h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="cleaning">
+        <source src="background/background.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="logo">
+            <img src="images/túl-clean.png" alt="Túl-Clean Logo">
+        </div>
+        <div class="text font">
+            <h1>HAMAROSAN</h1>
+        </div>
+    </div>
+</body>
+</html>
