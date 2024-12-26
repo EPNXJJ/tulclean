@@ -1,2 +1,3 @@
 # tulclean
-First version of a newly created website
+
+A new project is underway about an extreme cleaning service.
