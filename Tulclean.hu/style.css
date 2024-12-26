@@ -19,6 +19,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow-y: hidden;
+    overscroll-behavior: none;
 }
 
 .container {
@@ -61,11 +63,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    html, body {
-        overflow: hidden;
-        height: 100%;
-    }
-
     .logo img {
         max-width: 70%;
     }
@@ -76,11 +73,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    html, body {
-        overflow: hidden;
-        height: 100%;
-    }
-
     .logo img {
         max-width: 90%;
     }
