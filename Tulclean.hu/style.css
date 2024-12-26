@@ -25,7 +25,7 @@ body {
     text-align: center;
     position: relative;
     padding: 20px;
-    overflow: hidden;
+    overflow-y: hidden;
     overscroll-behavior: none
 }
 
