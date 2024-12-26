@@ -61,6 +61,11 @@ body {
 }
 
 @media (max-width: 768px) {
+    html, body {
+        overflow: hidden;
+        height: 100%;
+    }
+
     .logo img {
         max-width: 70%;
     }
@@ -71,6 +76,11 @@ body {
 }
 
 @media (max-width: 480px) {
+    html, body {
+        overflow: hidden;
+        height: 100%;
+    }
+
     .logo img {
         max-width: 90%;
     }
