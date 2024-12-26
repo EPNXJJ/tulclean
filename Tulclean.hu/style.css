@@ -19,14 +19,15 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow-y: hidden;
-    overscroll-behavior: none;
+    overflow: visible;
 }
 
 .container {
     text-align: center;
     position: relative;
     padding: 20px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .logo img {
