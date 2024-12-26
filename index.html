@@ -11,17 +11,18 @@
         gtag('config', 'G-2CL08KLKXH');
     </script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Túl-Clean</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="preload" href="Tulclean.hu/background/background.mp4" as="video" type="video/mp4">
     <link rel="stylesheet" href="Tulclean.hu/style.css">
 </head>
 <body>
-    <video autoplay muted loop playsinline id="cleaning">
+    <div id="loader"></div>
+    <video autoplay muted loop playsinline id="cleaning" class="hidden">
         <source src="Tulclean.hu/background/background.mp4" type="video/mp4">
     </video>
-    <div class="container">
+    <div class="container hidden">
         <div class="logo">
             <img src="Tulclean.hu/images/túl-clean.png" alt="Túl-Clean Logo">
         </div>
@@ -29,5 +30,6 @@
             <h1>HAMAROSAN</h1>
         </div>
     </div>
+    <script src="Tulclean.hu/loading.js"></script>
 </body>
 </html>

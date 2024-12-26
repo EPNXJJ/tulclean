@@ -1,21 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@100&display=swap');
 
+:root {
+    --main-bg-color: #d9d9d9;
+    --loader-bg-color: #000000;
+    --loader-acc-color: #2185c7;
+}
+
+#loader {
+    width: 3em;
+    height: 3em;
+
+    border-radius: 50%;
+    border: 0.75em solid var(--loader-bg-color);
+    border-top-color: var(--loader-acc-color);
+
+    animation: 2s infinite load;
+}
+
+@keyframes load {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
 .font {
     font-family: "Luckiest Guy", serif;
     font-weight: 400;
     font-style: normal;
 }
 
+.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.show {
+    opacity: 1;
+    height: auto;
+    transition: opacity 1s ease;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-y: hidden;
-    overscroll-behavior: none;
+    overscroll-behavior-y: contain;
+    overflow: hidden;
 }
 
 body {
-    background-color: #d9d9d9;
+    background-color: var(--main-bg-color);
     height: 100vh;
     display: flex;
     align-items: center;
