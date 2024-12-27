@@ -1,3 +1,11 @@
+function adjustViewportHeight() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+window.addEventListener('resize', adjustViewportHeight);
+window.addEventListener('load', adjustViewportHeight);
+
 document.addEventListener('touchmove', function(e) {
     e.preventDefault();
 }, { passive: false });
