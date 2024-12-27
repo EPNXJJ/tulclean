@@ -37,7 +37,7 @@
 .show {
     opacity: 1;
     height: auto;
-    transition: opacity 2s ease;
+    transition: opacity 0.5s ease-in;
 }
 
 body, html {
@@ -45,8 +45,7 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     overscroll-behavior-y: contain;
-    overflow: hidden;
-    -webkit-overflow-scrolling: none;
+    overflow: hidden !important;
 }
 
 body {
@@ -56,6 +55,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    -webkit-overflow-scrolling: none;
+    touch-action: none;
 }
 
 .container {
@@ -95,6 +96,7 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    pointer-events: none;
 }
 
 @media (max-width: 768px) {
